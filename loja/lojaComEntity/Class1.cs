@@ -14,7 +14,7 @@ namespace lojaComEntity
         {
             Usuario renan = new Usuario()
             {
-                Nome = "Renan",
+                Nome = "Teste",
                 Senha = "123"
             };
 

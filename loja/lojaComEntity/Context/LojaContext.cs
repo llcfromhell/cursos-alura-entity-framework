@@ -12,5 +12,6 @@ namespace lojaComEntity.Context
 
         public DbSet<Usuario> Usuarios { get; set; }
 
+
     }
 }
