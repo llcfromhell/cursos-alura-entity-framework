@@ -13,7 +13,7 @@ namespace lojaComEntity.Migrations
         
         string IMigrationMetadata.Id
         {
-            get { return "201611141506455_criaUsuario"; }
+            get { return "201612060202343_criaUsuario"; }
         }
         
         string IMigrationMetadata.Source

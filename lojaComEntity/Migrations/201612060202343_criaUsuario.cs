@@ -11,11 +11,10 @@ namespace lojaComEntity.Migrations
                 "dbo.Usuarios",
                 c => new
                     {
-                        ID = c.Int(nullable: false, identity: true),
-                        Nome = c.String(),
+                        Nome = c.String(nullable: false, maxLength: 128),
                         Senha = c.String(),
                     })
-                .PrimaryKey(t => t.ID);
+                .PrimaryKey(t => t.Nome);
             
         }
         
