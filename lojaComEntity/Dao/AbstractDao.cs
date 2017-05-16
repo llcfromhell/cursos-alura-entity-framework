@@ -10,7 +10,7 @@ namespace lojaComEntity.Dao
     public abstract class AbstractDao
     {
 
-        protected LojaContext ctx = new LojaContext("LojaContextConnectionString");
+        protected LojaContext ctx = new LojaContext();
 
     }
 }
