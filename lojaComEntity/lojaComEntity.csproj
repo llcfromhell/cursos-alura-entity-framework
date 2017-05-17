@@ -56,6 +56,9 @@
     <Compile Include="Dao\UsuarioDao.cs" />
     <Compile Include="Entidades\Categoria.cs" />
     <Compile Include="Entidades\Cliente.cs" />
+    <Compile Include="Entidades\Pessoa.cs" />
+    <Compile Include="Entidades\PessoaFisica.cs" />
+    <Compile Include="Entidades\PessoaJuridica.cs" />
     <Compile Include="Entidades\Produto.cs" />
     <Compile Include="Entidades\ProdutoTop.cs" />
     <Compile Include="Entidades\ProdutoVenda.cs" />
@@ -80,6 +83,10 @@
     <Compile Include="Migrations\201705160412553_adicionandoProdutoTop.cs" />
     <Compile Include="Migrations\201705160412553_adicionandoProdutoTop.Designer.cs">
       <DependentUpon>201705160412553_adicionandoProdutoTop.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201705170121386_herancaPessoas.cs" />
+    <Compile Include="Migrations\201705170121386_herancaPessoas.Designer.cs">
+      <DependentUpon>201705170121386_herancaPessoas.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Program.cs" />
@@ -113,6 +120,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201705160412553_adicionandoProdutoTop.resx">
       <DependentUpon>201705160412553_adicionandoProdutoTop.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201705170121386_herancaPessoas.resx">
+      <DependentUpon>201705170121386_herancaPessoas.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

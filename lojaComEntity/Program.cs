@@ -38,10 +38,25 @@ namespace lojaComEntity
 
             //produtosPorNomeOuCategoria("Bolo", "Salgados");
 
-            criaUmaVenda();
-            mostraVendas();
+            //criaUmaVenda();
+            //mostraVendas();
+
+            criaPessoas();
+            mostraPessoas();
 
 
+        }
+
+        private static void criaPessoas()
+        {
+            ctx.PessoaFisicas.Add(new PessoaFisica { Nome = "p f", cpf = "1235" });
+            ctx.PessoasJuridicas.Add(new PessoaJuridica { Nome = "p j", cnpj = "8963" });
+            ctx.SaveChanges();
+        }
+
+        private static void mostraPessoas()
+        {
+            ctx.Pessoa.ToList().ForEach(p => Console.WriteLine("Nome: " + p.Nome + " - " + (p is PessoaFisica ? "cpf: " + ((PessoaFisica)p).cpf : "cnpj: " + ((PessoaJuridica)p).cnpj)));
         }
 
         private static void criaUmaVenda()

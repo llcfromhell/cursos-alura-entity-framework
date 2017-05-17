@@ -21,6 +21,10 @@ namespace lojaComEntity.Context
         public DbSet<Venda> Vendas { get; set; }
         public DbSet<ProdutoVenda> ProdutoVendas { get; set; }
         public DbSet<ProdutoTop> ProdutoTops { get; set; }
+        public DbSet<Pessoa> Pessoa { get; set; }
+        public DbSet<PessoaFisica> PessoaFisicas { get; set; }
+        public DbSet<PessoaJuridica> PessoasJuridicas { get; set; }
+
 
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
